@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Button from "./components/Button";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
 import Oscar from "./components/Oscar";
@@ -35,6 +36,7 @@ function App() {
   return (
     <div className="App">
       <Greet name="Arshad v p" messageCount={10} isLoggedIn={true} />
+      <Greet name="Ammena" isLoggedIn={true} />
       <Person name={personName} isLoggedIn={true} />
       <PresonList names={nameList} />
       <Status status="success" />
@@ -42,6 +44,7 @@ function App() {
       <Oscar>
         <Heading>Oscar gos to Decaprio</Heading>{" "}
       </Oscar>
+      <Button handleClick={()=>{console.log("hi")}}/>
     </div>
   );
 }
