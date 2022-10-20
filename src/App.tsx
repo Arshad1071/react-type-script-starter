@@ -2,12 +2,12 @@ import React from "react";
 import "./App.css";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
+import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import PresonList from "./components/PresonList";
 import Status from "./components/Status";
 
 function App() {
-
   const personName = {
     first: "Arshad",
     last: "v p",
@@ -29,17 +29,19 @@ function App() {
     {
       first: "Sindhu",
       last: "M",
-    }
-
+    },
   ];
 
   return (
     <div className="App">
       <Greet name="Arshad v p" messageCount={10} isLoggedIn={true} />
       <Person name={personName} isLoggedIn={true} />
-      <PresonList names={nameList}/>
-      <Status status="success"/>
+      <PresonList names={nameList} />
+      <Status status="success" />
       <Heading>PlaceHolder Test</Heading>
+      <Oscar>
+        <Heading>Oscar gos to Decaprio</Heading>{" "}
+      </Oscar>
     </div>
   );
 }
