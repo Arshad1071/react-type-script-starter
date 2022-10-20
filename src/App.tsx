@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Greet from "./components/Greet";
+import Heading from "./components/Heading";
 import Person from "./components/Person";
 import PresonList from "./components/PresonList";
 import Status from "./components/Status";
@@ -38,6 +39,7 @@ function App() {
       <Person name={personName} isLoggedIn={true} />
       <PresonList names={nameList}/>
       <Status status="success"/>
+      <Heading>PlaceHolder Test</Heading>
     </div>
   );
 }
