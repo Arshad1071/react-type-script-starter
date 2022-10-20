@@ -3,6 +3,7 @@ import "./App.css";
 import Greet from "./components/Greet";
 import Person from "./components/Person";
 import PresonList from "./components/PresonList";
+import Status from "./components/Status";
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
       <Greet name="Arshad v p" messageCount={10} isLoggedIn={true} />
       <Person name={personName} isLoggedIn={true} />
       <PresonList names={nameList}/>
+      <Status status="success"/>
     </div>
   );
 }
